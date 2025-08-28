@@ -49,6 +49,15 @@ The goal is to build a functional prototype that allows users to monitor and und
 
 # Tech Stack
 
+## Backend
+ - Python (Fast API)
+ - Postgress 
+ - PRISMA ORM
+ - Swagger
 
+## Frontend
+ - Nextjs
+ - Shadcn ui
+ - Zod
 
 
