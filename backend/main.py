@@ -1,22 +1,9 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI
+from routes.auth import router as auth_router
+from routes.telemetry import router as telemetry_router
+from routes.conversational_ai import router as ai_router
 
 app = FastAPI(title="Smart Home Energy Backend")
-
-auth_router = APIRouter()
-telemetry_router = APIRouter()
-ai_router = APIRouter()
-
-@auth_router.get("/auth/health")
-def auth_health():
-    return {"status": "ok", "service": "auth"}
-
-@telemetry_router.get("/telemetry/health")
-def telemetry_health():
-    return {"status": "ok", "service": "telemetry"}
-
-@ai_router.get("/ai/health")
-def ai_health():
-    return {"status": "ok", "service": "conversational_ai"}
 
 app.include_router(auth_router)
 app.include_router(telemetry_router)
