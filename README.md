@@ -54,10 +54,13 @@ The goal is to build a functional prototype that allows users to monitor and und
  - Postgress 
  - PRISMA ORM
  - Swagger
+ - pytest
 
 ## Frontend
  - Nextjs
  - Shadcn ui
  - Zod
+ - Jest
+
 
 
